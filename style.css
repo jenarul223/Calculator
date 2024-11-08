@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  color: #2E0A44;
+  background-color: #F9FF00;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg ,#B026B0,#6F00FF,#C9AE3B,#855C9FE0);
+   animation: body 10s linear infinite; 
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+@keyframes body{
+  0%  {
+    filter: hue-rotate(45deg);
+  }
+  25%{
+    filter: hue-rotate(90deg);
+  }
+  50%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg)
+  }
+}
+.container{
+  width: 400px;
+  background-color:#123F00;
+  height: auto;
+  margin:auto;
+  padding: 20px;
+}
+div.input{
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: content-box;
+}
+input{
+  width: 210px;
+  text-align: center;
+  font-size: 34px;
+  margin: 20px auto 10px;
+  border-radius: 0;
+  border: 2px solid #264600;
+  background: linear-gradient(280deg ,#00FF03,#FF0000,#102851);
+  font-weight: 900;
+  color: #fff;
+}
+input::placeholder{
+  color: #fff;
+  font-weight:900;
+}
+
+button{
+  color: #7E7E7E;
+  font-weight: 900;
+  font-size:40px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+   margin: 2px ;
+   background: linear-gradient(30deg ,  #e2e2e2,red,#1B00FF);
+   color: #fff;
+   
+}
+button:hover{
+  color: #B21B1B;
+  background-color: #ff00dd;
+  box-shadow: 0;
+}
+.col{
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+button[onclick="deletToDisplay()"]{
+  font-size: 30px;
+  color: #fff;
+}
+@media screen and (max-width: 400){
+  .container{
+  width: 100%;
+  height: 100%;
+}
+}
